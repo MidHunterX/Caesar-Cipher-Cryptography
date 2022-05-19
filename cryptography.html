@@ -1,0 +1,61 @@
+<!--
+Project Name: Caesar Cipher Tool
+Coded by: Mid Hunter
+Date: May 14, 2022
+-->
+
+<head>
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/preload_stuff.js"></script>
+	<title>Caesar Cipher Tool</title>
+</head>
+
+
+<body>
+
+	<!-- Header Navigation Bar -->
+	<nav id="navbar" class="navbar row">
+		<h1 class="logo">CAESAR CIPHER <br><strong>CRYPTOGRAPHY TOOL</strong></h1>
+		<script>navbar()</script>
+	</nav>
+
+	<!-- Navigation Screen -->
+	<div class="nav">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="cryptography.html">&lt;cryptography&gt;</a></li>
+				<li class="nav__list-item"><a href="cipher_cracking.html">&lt;cipher_cracking&gt;</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Web App Content -->
+	<div class="ciphertool">
+		<!-- Plain Text box input -->
+		<div class="input_panel">
+			<h4 class="panel-tag">Input</h4>
+			<textarea id="input" cols="50" rows="6" placeholder="Enter Input Text here"></textarea>
+		</div>
+
+		<!-- Encryption/Decryption Key input -->
+		<input type="text" id="key" placeholder="Key" style="width:5em" />
+
+		<!-- Function Buttons -->
+		<div class="control_panel">
+			<!-- <input type="button" value="Encrypt" class="button" onclick="runDecrypt(false);" /> -->
+			<button type="button" value="Encrypt" class="button-glitch-l" onclick="runDecrypt(false);">Encrypt</button>
+			<button type="button" value="Decrypt" class="button-glitch" onclick="runDecrypt(true);">Decrypt</button>
+		</div>
+
+		<!-- Cipher Text bot output -->
+		<div class="output_panel">
+			<h4 class="panel-tag">Output</h4>
+			<textarea id="output" cols="50" rows="6" placeholder="Output Text appears here"></textarea>
+		</div>
+	</div>
+
+	<script src='js/jquery-3.6.0.slim.min.js'></script>
+	<script src="js/flashy_stuff.js"></script>
+	<script src="js/caesar_cipher.js"></script>
+
+</body>
