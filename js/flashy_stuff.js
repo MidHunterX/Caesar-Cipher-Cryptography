@@ -11,8 +11,17 @@
 			body = document.querySelector('body');
 			menu = document.querySelector('.menu-icon');
 			menuItems = document.querySelectorAll('.nav__list-item');
+
+			nav_transition(); // added for transition
+			window.addEventListener('load', function () { // added for transition
+				nav_transition();
+			})
 			applyListeners();
 		};
+		var nav_transition = function nav_transition() { // added for transition
+			return toggleClass(body, 'nav-active');
+		};
+
 		var applyListeners = function applyListeners() {
 			menu.addEventListener('click', function () {
 				return toggleClass(body, 'nav-active');

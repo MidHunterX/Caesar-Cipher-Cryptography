@@ -19,13 +19,6 @@ body{
 }
 
 
-table, th, td {
-	border: 1px solid;
-	padding: 1px;
-}
-
-
-
 
 h2, h3, h4, h5{
 	color: green;
@@ -128,6 +121,59 @@ strong {
 button{
 	margin: 10px;
 }
+
+
+
+/* Table Style
+--------------------------------------------- */
+th {
+	color:#D5DDE5;
+	background:#1b1e24;
+	border-bottom:4px solid #0088ff;
+	/* border-right: 1px solid #343a45; */
+	font-weight: 100;
+	padding: 15px 25px 15px 5px; /* Top Rigt Botm left */
+	text-align:left;
+	vertical-align:middle;
+  }
+
+  /* th:first-child {border-top-left-radius:3px;}
+  th:last-child {border-top-right-radius:3px;border-right:none;} */
+
+  tr {
+	border-top: 1px solid #C1C3D1;
+	border-bottom: 1px solid #C1C3D1;
+	color:#666B85;
+	font-weight:normal;
+	text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+  }
+
+  tr:hover td {
+	background:#4E5066;
+	color:#FFFFFF;
+  }
+
+  /* tr:first-child {border-top:none;}
+  tr:last-child {border-bottom:none;}
+  tr:nth-child(odd) td {background:#EBEBEB;}
+  tr:nth-child(odd):hover td {background:#4E5066;}
+  tr:last-child td:first-child {border-bottom-left-radius:3px;}
+  tr:last-child td:last-child {border-bottom-right-radius:3px;} */
+
+
+  td {
+	background:#FFFFFF;
+	text-align:left;
+	vertical-align:middle;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+	border-right: 1px solid #C1C3D1;
+	padding: 5px;
+  }
+
+  td:last-child {
+	border-right: 0px;
+  }
+
 
 
 /* Glitchy Button
