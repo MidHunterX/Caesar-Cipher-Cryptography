@@ -34,3 +34,6 @@
 	}();
 
 })(jQuery);
+
+// Landing Page typing text
+// $('.typing-text').css('display', 'block');

@@ -1,21 +1,8 @@
-/*
- * Automatic Caesar cipher breaker
- *
- * Copyright (c) 2021 Project Nayuki
- * All rights reserved. Contact Nayuki for licensing.
- * https://www.nayuki.io/page/automatic-caesar-cipher-breaker-javascript
- */
-
 "use strict";
-
-
 var app = new function () {
-
 	var textElem = document.getElementById("input");
 	var shiftElem = document.getElementById("shift");
 	var guessesElem = document.getElementById("guesses");
-
-
 
 	/*---- User interaction functions ----*/
 
@@ -24,7 +11,6 @@ var app = new function () {
 		shiftElem.textContent = "";
 		clearChildren(guessesElem);
 	};
-
 
 	var outputState = null;
 
@@ -106,8 +92,9 @@ var app = new function () {
 			else if (97 <= c && c <= 122) sum += Math.log(ENGLISH_FREQS[c - 97]);  // Lowercase
 			else ignored++;
 		}
-		return -sum / Math.log(2) / (str.length - ignored);
+		return -sum / (str.length - ignored);
 	}
+	// return -sum / Math.log(2) / (str.length - ignored);
 
 
 	// Decrypts the given string with the given key using the Caesar shift cipher.

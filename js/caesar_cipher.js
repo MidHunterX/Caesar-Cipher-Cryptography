@@ -24,7 +24,6 @@ function runDecrypt(isDecrypt) {
 	} else { // Input : Text
 		output.value = caesarShift(input.value, key);
 	}
-
 }
 
 
