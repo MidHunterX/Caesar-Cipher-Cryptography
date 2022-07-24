@@ -23,7 +23,16 @@ Date: May 15, 2022
 		}
 
 		#guesses tr.active div.bar {
-			background: #60A0FF;
+			background: #e63e3e;
+		}
+	</style>
+	<style>
+		body {
+			background-image: url('img/bg3.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
 		}
 	</style>
 </head>
@@ -33,16 +42,16 @@ Date: May 15, 2022
 	<!-- Header Navigation Bar -->
 	<nav id="navbar" class="navbar row">
 		<h1 class="logo">CAESAR CIPHER <br><strong>CODE CRACKING TOOL</strong></h1>
-		<script>navbar()</script>
+		<script>burger()</script>
 	</nav>
 
 	<!-- Navigation Screen -->
 	<div class="nav">
 		<div class="nav__content">
 			<ul class="nav__list">
+				<li class="nav__list-item"><a href="index.html">&lt;home_page&gt;</a></li>
 				<li class="nav__list-item "><a href="cryptography.html">&lt;cryptography&gt;</a></li>
 				<li class="nav__list-item active-nav"><a href="cipher_cracking.html">&lt;cipher_cracking&gt;</a></li>
-				<li class="nav__list-item"><a href="hack_database.html">&lt;hack_database&gt;</a></li>
 			</ul>
 		</div>
 	</div>
@@ -55,16 +64,19 @@ Date: May 15, 2022
 				oninput="app.doClear();">GUVF VF FBZR FNZCYR GRKG URER.</textarea>
 		</div>
 
-		<button onclick="app.doBreak();">Break code</button>
 
-		<div class="row">
-			<p>Key: </p>
-			<span id="shift"></span>
+		<button class="button-glitch-m text_glitch" onclick="app.doBreak();">&lt;Break code&gt;</button>
+
+		<div class="round-key">
+			<div class="row">
+				<p>Key: </p>
+				<span class="left" id="shift"></span>
+			</div>
 		</div>
 
 		<div class="row">
-			<button onclick="app.doShift(+1);">Up</button>
-			<button onclick="app.doShift(-1);">Down</button>
+			<button class="button-glitch-l" onclick="app.doShift(+1);">Up</button>
+			<button class="button-glitch" onclick="app.doShift(-1);">Down</button>
 		</div>
 
 		<table style="font-size:70%; margin-top:0em;">
@@ -83,5 +95,5 @@ Date: May 15, 2022
 	<script src='js/jquery-3.6.0.slim.min.js'></script>
 	<script src="js/flashy_stuff.js"></script>
 	<script src="js/caesar_cracker.js"></script>
-
+	<script src="js/rand_text_glitch.js"></script>
 </body>

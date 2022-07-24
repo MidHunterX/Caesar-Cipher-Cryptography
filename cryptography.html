@@ -8,6 +8,15 @@ Date: May 14, 2022
 	<link href="css/style.css" rel="stylesheet">
 	<script src="js/preload_stuff.js"></script>
 	<title>Caesar Cipher Tool</title>
+	<style>
+		body {
+			background-image: url('img/bg4.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+		}
+	</style>
 </head>
 
 
@@ -16,16 +25,16 @@ Date: May 14, 2022
 	<!-- Header Navigation Bar -->
 	<nav id="navbar" class="navbar row">
 		<h1 class="logo">CAESAR CIPHER <br><strong>CRYPTOGRAPHY TOOL</strong></h1>
-		<script>navbar()</script>
+		<script>burger()</script>
 	</nav>
 
 	<!-- Navigation Screen -->
 	<div class="nav">
 		<div class="nav__content">
 			<ul class="nav__list">
+				<li class="nav__list-item"><a href="index.html">&lt;home_page&gt;</a></li>
 				<li class="nav__list-item active-nav"><a href="cryptography.html">&lt;cryptography&gt;</a></li>
 				<li class="nav__list-item"><a href="cipher_cracking.html">&lt;cipher_cracking&gt;</a></li>
-				<li class="nav__list-item"><a href="hack_database.html">&lt;hack_database&gt;</a></li>
 			</ul>
 		</div>
 	</div>
@@ -38,7 +47,7 @@ Date: May 14, 2022
 			<textarea id="input" cols="50" rows="6" placeholder="Enter Input Text here"></textarea>
 		</div>
 
-		<!-- Encryption/Decryption Key input -->
+		<!-- Key input -->
 		<input type="text" id="key" placeholder="Key" style="width:5em" />
 
 		<!-- Function Buttons -->
