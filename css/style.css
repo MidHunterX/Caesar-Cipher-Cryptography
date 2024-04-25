@@ -608,11 +608,11 @@ body.nav-active .nav__list-item:nth-child(10) {
 .typing-text {
 	/* display:none; */
 	/* margin: 0; */
-	width: 65ch;
+	width: 53ch;
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: 5px solid #ffffff;
-	animation: typing 3s steps(65),
+	animation: typing 3s steps(53),
 				 caret 1s steps(1) infinite;
   }
   @keyframes typing {from{width:0}}
